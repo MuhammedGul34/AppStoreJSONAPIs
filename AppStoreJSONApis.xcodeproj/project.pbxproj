@@ -16,6 +16,8 @@
 		2EF53940293E34B300660F06 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5393F293E34B300660F06 /* BaseTabBarController.swift */; };
 		2EF53945293E573A00660F06 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF53944293E573A00660F06 /* AppsSearchController.swift */; };
 		2EF53948293E61D200660F06 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF53947293E61D200660F06 /* SearchResultCell.swift */; };
+		2EF5394B293E737E00660F06 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5394A293E737E00660F06 /* UIView+Layout.swift */; };
+		2EF5394D293E822900660F06 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5394C293E822900660F06 /* VerticalStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2EF5393F293E34B300660F06 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		2EF53944293E573A00660F06 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
 		2EF53947293E61D200660F06 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		2EF5394A293E737E00660F06 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		2EF5394C293E822900660F06 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		2EF5392A293E349B00660F06 /* AppStoreJSONApis */ = {
 			isa = PBXGroup;
 			children = (
+				2EF53949293E72F000660F06 /* Helpers */,
 				2EF53946293E619300660F06 /* Views */,
 				2EF53943293E56CE00660F06 /* Controller */,
 				2EF5392B293E349B00660F06 /* AppDelegate.swift */,
@@ -90,6 +95,15 @@
 				2EF53947293E61D200660F06 /* SearchResultCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2EF53949293E72F000660F06 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5394A293E737E00660F06 /* UIView+Layout.swift */,
+				2EF5394C293E822900660F06 /* VerticalStackView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +182,8 @@
 				2EF5392C293E349B00660F06 /* AppDelegate.swift in Sources */,
 				2EF53945293E573A00660F06 /* AppsSearchController.swift in Sources */,
 				2EF53948293E61D200660F06 /* SearchResultCell.swift in Sources */,
+				2EF5394D293E822900660F06 /* VerticalStackView.swift in Sources */,
+				2EF5394B293E737E00660F06 /* UIView+Layout.swift in Sources */,
 				2EF5392E293E349B00660F06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
