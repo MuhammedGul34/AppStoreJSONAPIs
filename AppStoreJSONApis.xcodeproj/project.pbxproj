@@ -15,6 +15,7 @@
 		2EF53938293E349C00660F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF53936293E349C00660F06 /* LaunchScreen.storyboard */; };
 		2EF53940293E34B300660F06 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5393F293E34B300660F06 /* BaseTabBarController.swift */; };
 		2EF53945293E573A00660F06 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF53944293E573A00660F06 /* AppsSearchController.swift */; };
+		2EF53948293E61D200660F06 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF53947293E61D200660F06 /* SearchResultCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2EF53939293E349C00660F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF5393F293E34B300660F06 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		2EF53944293E573A00660F06 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
+		2EF53947293E61D200660F06 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		2EF5392A293E349B00660F06 /* AppStoreJSONApis */ = {
 			isa = PBXGroup;
 			children = (
+				2EF53946293E619300660F06 /* Views */,
 				2EF53943293E56CE00660F06 /* Controller */,
 				2EF5392B293E349B00660F06 /* AppDelegate.swift */,
 				2EF5392D293E349B00660F06 /* SceneDelegate.swift */,
@@ -79,6 +82,14 @@
 				2EF53944293E573A00660F06 /* AppsSearchController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2EF53946293E619300660F06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EF53947293E61D200660F06 /* SearchResultCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 				2EF53930293E349B00660F06 /* ViewController.swift in Sources */,
 				2EF5392C293E349B00660F06 /* AppDelegate.swift in Sources */,
 				2EF53945293E573A00660F06 /* AppsSearchController.swift in Sources */,
+				2EF53948293E61D200660F06 /* SearchResultCell.swift in Sources */,
 				2EF5392E293E349B00660F06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
