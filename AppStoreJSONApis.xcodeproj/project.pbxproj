@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EA13F582940A69100D3EDD5 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA13F572940A69100D3EDD5 /* SearchResult.swift */; };
 		2EF5392C293E349B00660F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5392B293E349B00660F06 /* AppDelegate.swift */; };
 		2EF5392E293E349B00660F06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5392D293E349B00660F06 /* SceneDelegate.swift */; };
 		2EF53930293E349B00660F06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5392F293E349B00660F06 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EA13F572940A69100D3EDD5 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		2EF53928293E349B00660F06 /* AppStoreJSONApis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreJSONApis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF5392B293E349B00660F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EF5392D293E349B00660F06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EA13F542940A65100D3EDD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EA13F572940A69100D3EDD5 /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2EF5391F293E349B00660F06 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		2EF5392A293E349B00660F06 /* AppStoreJSONApis */ = {
 			isa = PBXGroup;
 			children = (
+				2EA13F542940A65100D3EDD5 /* Model */,
 				2EF53949293E72F000660F06 /* Helpers */,
 				2EF53946293E619300660F06 /* Views */,
 				2EF53943293E56CE00660F06 /* Controller */,
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF53940293E34B300660F06 /* BaseTabBarController.swift in Sources */,
+				2EA13F582940A69100D3EDD5 /* SearchResult.swift in Sources */,
 				2EF53930293E349B00660F06 /* ViewController.swift in Sources */,
 				2EF5392C293E349B00660F06 /* AppDelegate.swift in Sources */,
 				2EF53945293E573A00660F06 /* AppsSearchController.swift in Sources */,
