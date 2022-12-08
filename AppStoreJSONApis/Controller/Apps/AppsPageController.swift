@@ -5,6 +5,7 @@
 //  Created by Muhammed Gül on 8.12.2022.
 //
 
+
 import UIKit
 
 class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout {
@@ -14,17 +15,35 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        collectionView.backgroundColor = .white
+        
         collectionView.register(AppsGroupCell.self, forCellWithReuseIdentifier: cellId)
-        //1
+        
+        // 1
         collectionView.register(AppsPageHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        
+        fetchData()
     }
-    //2
+    
+    fileprivate func fetchData() {
+        print("Fetching new JSON DATA somehow...")
+        Service.shared.fetchGames { (appGroup, err) in
+            if let err = err {
+                print("Failed to fetch games:", err)
+                return
+            }
+            
+            print(appGroup?.feed.results)
+        }
+    }
+    
+    // 2
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
         return header
     }
-    //3
+    
+    // 3
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return .init(width: view.frame.width, height: 300)
     }
@@ -45,4 +64,5 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return .init(top: 16, left: 0, bottom: 0, right: 0)
     }
+    
 }
