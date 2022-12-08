@@ -1,0 +1,6 @@
+framework module Pods_AppStoreJSONApis {
+  umbrella header "Pods-AppStoreJSONApis-umbrella.h"
+
+  export *
+  module * { export * }
+}
