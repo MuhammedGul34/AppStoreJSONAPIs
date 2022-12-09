@@ -58,7 +58,7 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
             // this will actually fire my search
             
             Service.shared.fetchApps(searchTerm: searchText) { res, err in
-                self.appResults = res
+                self.appResults = res?.results ?? []
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
@@ -71,14 +71,14 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
     // 2 - Extract this function fetchITunesApps() outside of this controller file
     
     fileprivate func fetchITunesApps() {
-        Service.shared.fetchApps(searchTerm: "instagram") { (results, err) in
+        Service.shared.fetchApps(searchTerm: "instagram") { (res, err) in
             
             if let err = err {
                 print("Failed to fetch apps:", err)
                 return
             }
             
-            self.appResults = results
+            self.appResults = res?.results ?? []
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }
