@@ -53,8 +53,7 @@ class Service {
             
             do {
                 let appGroup = try JSONDecoder().decode(AppGroup.self, from: data!)
-                // success
-                appGroup.feed.results.forEach({print($0.name)})
+                // successes
                 completion(appGroup, nil)
             } catch {
                 completion(nil, error)
