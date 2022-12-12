@@ -11,6 +11,8 @@
 		2E364040294755F1000A6257 /* AppDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E36403F294755F1000A6257 /* AppDetailController.swift */; };
 		2E364043294772E1000A6257 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E364042294772E1000A6257 /* TodayController.swift */; };
 		2E364046294773F6000A6257 /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E364045294773F6000A6257 /* TodayCell.swift */; };
+		2E3640482947BEA0000A6257 /* AppFullScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3640472947BEA0000A6257 /* AppFullScreenController.swift */; };
+		2E36404A2947C45C000A6257 /* AppFullscreenDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3640492947C45C000A6257 /* AppFullscreenDescriptionCell.swift */; };
 		2EA13F582940A69100D3EDD5 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA13F572940A69100D3EDD5 /* SearchResult.swift */; };
 		2EA13F5B2940AFFA00D3EDD5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA13F5A2940AFFA00D3EDD5 /* Service.swift */; };
 		2EA13F5E294218D500D3EDD5 /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA13F5D294218D500D3EDD5 /* AppsPageController.swift */; };
@@ -43,6 +45,8 @@
 		2E36403F294755F1000A6257 /* AppDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailController.swift; sourceTree = "<group>"; };
 		2E364042294772E1000A6257 /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
 		2E364045294773F6000A6257 /* TodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
+		2E3640472947BEA0000A6257 /* AppFullScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFullScreenController.swift; sourceTree = "<group>"; };
+		2E3640492947C45C000A6257 /* AppFullscreenDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFullscreenDescriptionCell.swift; sourceTree = "<group>"; };
 		2EA13F572940A69100D3EDD5 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		2EA13F5A2940AFFA00D3EDD5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		2EA13F5D294218D500D3EDD5 /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2E364042294772E1000A6257 /* TodayController.swift */,
+				2E3640472947BEA0000A6257 /* AppFullScreenController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				2E364045294773F6000A6257 /* TodayCell.swift */,
+				2E3640492947C45C000A6257 /* AppFullscreenDescriptionCell.swift */,
 			);
 			path = TodayCell;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF53940293E34B300660F06 /* BaseTabBarController.swift in Sources */,
+				2E3640482947BEA0000A6257 /* AppFullScreenController.swift in Sources */,
 				2EA62E6429435A6600AD1A32 /* SocialApp.swift in Sources */,
 				2EA13F5E294218D500D3EDD5 /* AppsPageController.swift in Sources */,
 				2EA13F582940A69100D3EDD5 /* SearchResult.swift in Sources */,
@@ -387,6 +394,7 @@
 				2EA13F722942762B00D3EDD5 /* AppGroup.swift in Sources */,
 				2EA13F702942672900D3EDD5 /* AppHeaderCell.swift in Sources */,
 				2EF5392E293E349B00660F06 /* SceneDelegate.swift in Sources */,
+				2E36404A2947C45C000A6257 /* AppFullscreenDescriptionCell.swift in Sources */,
 				2EA13F662942256900D3EDD5 /* AppsHorizontalController.swift in Sources */,
 				2EA13F682942529100D3EDD5 /* AppRowCell.swift in Sources */,
 			);
