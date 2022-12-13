@@ -83,12 +83,9 @@ class SearchResultCell: UICollectionViewCell {
         return imageView
     }
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         // optional
-    
         let infoTopStackView = UIStackView(arrangedSubviews: [
             appIconImageView,
             VerticalStackView(arrangedSubviews: [
@@ -110,11 +107,8 @@ class SearchResultCell: UICollectionViewCell {
         addSubview(overallStackView)
         
         overallStackView.fillSuperview(padding: .init(top: 16, left: 16, bottom: 16, right: 16))
-        
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }

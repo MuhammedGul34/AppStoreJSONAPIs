@@ -52,7 +52,6 @@ class TodayCell: UICollectionViewCell {
             categoryLabel, titleLabel, imageContainerView, descriptionLabel
             ], spacing: 8)
         addSubview(stackView)
-//        stackView.fillSuperview(padding: .init(top: 24, left: 24, bottom: 24, right: 24))
         stackView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, padding: .init(top: 0, left: 24, bottom: 24, right: 24))
         self.topConstraint = stackView.topAnchor.constraint(equalTo: topAnchor, constant: 24)
         self.topConstraint.isActive = true

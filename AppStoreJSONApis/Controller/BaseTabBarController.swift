@@ -36,9 +36,7 @@ class BaseTabBarController : UITabBarController {
         tabBar.tintColor = .systemBlue
         UITabBar.appearance().backgroundColor = .systemGray6
         UINavigationBar.appearance().backgroundColor = .systemGray6
-    
-        
-        
+  
         return navController
         
     }

@@ -31,9 +31,7 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
         
         collectionView.addSubview(enterSearchTermLabel)
         enterSearchTermLabel.fillSuperview(padding: .init(top: 100, left: 50, bottom: 0, right: 50))
-        
-//        fetchITunesApps()
-        
+
         setupSearchBar()
     }
     
@@ -67,8 +65,7 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
             }
     
     fileprivate var appResults = [Result]()
-    
-    // 2 - Extract this function fetchITunesApps() outside of this controller file
+
     
     fileprivate func fetchITunesApps() {
         Service.shared.fetchApps(searchTerm: "instagram") { (res, err) in
@@ -83,9 +80,7 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
                 self.collectionView.reloadData()
             }
         }
-        
-        // we need to get back our search results somehow
-        // use a completion block
+ 
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
